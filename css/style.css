@@ -62,10 +62,14 @@ a.related:hover::before {top: -50px; border-bottom: 3px solid #000;}
 
 /*header#side--------------------------------------------------------------------------------------------------------*/
 header#side {
-	float: left;
+	
 	width: 13%;
 	overflow: auto;
+	position: fixed;
+	z-index: 5;
+	height: 100%;
 }
+
 
 header #logo, header nav#mainNav li#bar {display: none;}
 
@@ -123,8 +127,9 @@ header nav#mainNav #sideNav li a:hover:before {width: 100%;}
 
 /*section#main----------------------------------------------------------------------------------------------*/
 section#main {
-	float: left;
-	width: 87%;
+	
+	width: 100%;
+	padding-left: 13%;
 }
 
 /* section#main section#carousel-------------------------------------------------------------------------------------------*/
@@ -270,6 +275,16 @@ footer i:hover {
 /* media query for screen less than 992px wide*/
 @media only screen and (max-width: 992px) {
 	/*navigation*/
+
+	header#side {
+	position: static;
+   }
+
+   section#main {
+   	width: 100%;
+   	padding-left:0;
+   }
+
 	header #branding {display: none;}
 	header #logo {display: block;}
 
@@ -296,7 +311,7 @@ footer i:hover {
 	}
 
 	/*section#main*/
-	.row section#main {
+	section#main {
 		float: none;
 		width: 100%;
 		margin: 0;
@@ -306,15 +321,15 @@ footer i:hover {
 	section#main #business {width: 80%;}
 	section#main section#business, section#main section#development { text-align: center;}
 	
-	.row section#main #business .left, section#main #development .left {
+	section#main #business .left, section#main #development .left {
 		float: none;
 		width: 100%;
 	}
 
-	.row section#main  #business .text,  .row section#main #development .text {padding: 40px 20px 0px;}
+	section#main  #business .text,  .row section#main #development .text {padding: 40px 20px 0px;}
 
 	/*section#contact*/
-	.row section#main section#contact {padding: 40px 20px 0px;}
+	section#main section#contact {padding: 40px 20px 0px;}
 
 } /*End of media query for screen less than 992px wide*/
 
@@ -322,12 +337,6 @@ footer i:hover {
 /*for screen less than 860px wide*/
 @media only screen and (max-width: 860px) {
  	header nav#mainNav #sideNav {width: 40%;}
-
- 	/*section#main #carousel #carousel-first #heroImage img {
- 		height: 50%;
- 	}*/
-
-
 
  	section#main #carousel #carousel-first #services {
  		position: absolute;
@@ -339,8 +348,7 @@ footer i:hover {
  	position: absolute;
  	top: 30px;
  	width: 30%;
- 	
- }
+ 	}
 
  	section#main #carousel  p {font-size: 12px; margin-bottom: 0;}
 
@@ -354,39 +362,20 @@ footer i:hover {
  		margin-top: 0;
  	}
 
- /*	section#main #carousel #carousel-first #services .col {
- 		float: none;
- 		width: 100%;
-	}*/
-
- 	/*section#main #carousel  #carousel-last #strategy {
- 		position: absolute;
- 		top: 500px;
- 		height: 650px;
- 		width: 90%;
- 		left: 10px;
- 		text-align: center;
- 	}*/
-
  	section#main #carousel  #dot {
  		position: absolute;
  		right: 20px;
  		top: 40%;
  		z-index: 1;
  	}
-
- 	
  
- 	.row section#main section#contact input {width: 90%;}
+ 	section#main section#contact input {width: 90%;}
 } /*End of screen less than 860px wide*/
 
 
 
 /*for screen less than 600px wide*/
 @media only screen and (max-width: 600px) {
-
-	
-	
 	section#main #carousel #carousel-first #heroImage img {
  		height: 150px;
  	}
@@ -396,23 +385,12 @@ footer i:hover {
  	}
 
 	header nav#mainNav #sideNav {width: 50%;}
- 	section#main #carousel  #carousel-last #strategy {
+ 	section#main #carousel  #carousel-last #strategy, section#main #carousel #carousel-first #services {
  		position: absolute;
- 		top: 140px;
- 		height: 320px;
- 		width: 90%;
- 		left: 10px;
- 		text-align: center;
- 		background-color: #f1f1f1;
+ 		top: 150px;
+ 		height: 300px;
  		width: 100%;
- 	}
-
- 	section#main #carousel #carousel-first #services {
- 		position: absolute;
- 		top: 130px;
- 		height: 320px;
- 		width: 90%;
- 		left: 10px;
+ 		left: 0px;
  		text-align: center;
  		background-color: #f1f1f1;
  		width: 100%;
@@ -430,7 +408,7 @@ footer i:hover {
  		margin-top: 0;
  	}
 
- 	.row section#main section#business {margin-top: 300px;}
+ 	section#main section#business {margin-top: 300px;}
 
  	section#main #carousel  #dot {
  		position: absolute;
