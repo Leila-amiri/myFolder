@@ -323,41 +323,59 @@ footer i:hover {
 @media only screen and (max-width: 860px) {
  	header nav#mainNav #sideNav {width: 40%;}
 
- 	section#main #carousel #carousel-first #heroImage img {
+ 	/*section#main #carousel #carousel-first #heroImage img {
  		height: 50%;
- 	}
+ 	}*/
+
+
 
  	section#main #carousel #carousel-first #services {
  		position: absolute;
- 		top: 410px;
- 		height: 650px;
- 		width: 90%;
- 		left: 10px;
- 		text-align: center;
+ 		top: 20px;
+ 		font-size: 13px;
  	}
 
- 	section#main #carousel #carousel-first #services .col {
+ 	section#main #carousel  #carousel-last #strategy {
+ 	position: absolute;
+ 	top: 30px;
+ 	width: 30%;
+ 	
+ }
+
+ 	section#main #carousel  p {font-size: 12px; margin-bottom: 0;}
+
+ 	section#main #carousel #carousel-first #services .col p {font-size: 10px;}
+
+ 	section#main #carousel h1 {font-size: 20px;}
+
+ 	section#main #carousel #carousel-first #services .col img {
+ 		width: 50%;
+ 		height: 50%;
+ 		margin-top: 0;
+ 	}
+
+ /*	section#main #carousel #carousel-first #services .col {
  		float: none;
  		width: 100%;
-	}
+	}*/
 
- 	section#main #carousel  #carousel-last #strategy {
+ 	/*section#main #carousel  #carousel-last #strategy {
  		position: absolute;
  		top: 500px;
  		height: 650px;
  		width: 90%;
  		left: 10px;
  		text-align: center;
- 	}
+ 	}*/
 
  	section#main #carousel  #dot {
  		position: absolute;
  		right: 20px;
- 		top: 15%;
+ 		top: 40%;
  		z-index: 1;
  	}
 
- 	section#main section#business {margin-top: 800px;}
+ 	
  
  	.row section#main section#contact input {width: 90%;}
 } /*End of screen less than 860px wide*/
@@ -366,24 +384,58 @@ footer i:hover {
 
 /*for screen less than 600px wide*/
 @media only screen and (max-width: 600px) {
+
+	
+	
+	section#main #carousel #carousel-first #heroImage img {
+ 		height: 150px;
+ 	}
+
+ 	section#main #carousel #carousel-last #heroImage img {
+ 		height: 150px;
+ 	}
+
 	header nav#mainNav #sideNav {width: 50%;}
  	section#main #carousel  #carousel-last #strategy {
  		position: absolute;
- 		top: 400px;
- 		height: 650px;
+ 		top: 140px;
+ 		height: 320px;
  		width: 90%;
  		left: 10px;
  		text-align: center;
+ 		background-color: #f1f1f1;
+ 		width: 100%;
  	}
 
  	section#main #carousel #carousel-first #services {
  		position: absolute;
- 		top: 230px;
- 		height: 650px;
+ 		top: 130px;
+ 		height: 320px;
  		width: 90%;
  		left: 10px;
  		text-align: center;
+ 		background-color: #f1f1f1;
+ 		width: 100%;
  	}
 
- 	section#main section#business {margin-top: 700px;}
+ 	section#main #carousel  p {font-size: 13px; margin-bottom: 0;}
+
+ 	section#main #carousel #carousel-first #services .col p {font-size: 13px;}
+
+ 	section#main #carousel h1 {font-size: 32px;}
+
+ 	section#main #carousel #carousel-first #services .col img {
+ 		width: 50%;
+ 		height: 50%;
+ 		margin-top: 0;
+ 	}
+
+ 	.row section#main section#business {margin-top: 300px;}
+
+ 	section#main #carousel  #dot {
+ 		position: absolute;
+ 		right: 20px;
+ 		top: 35%;
+ 		z-index: 1;
+ 	}
  } /*End of screen less than 600px wide*/
